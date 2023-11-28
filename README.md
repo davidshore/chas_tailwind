@@ -73,7 +73,7 @@ npm run dev
 I index.html
 
 ```
-<h1 className="text-3xl font-bold underline">
+<h1 class="text-3xl font-bold underline">
   Hello world!
 </h1>
 ```
