@@ -4,79 +4,12 @@ Er uppgift är att återskapa toppen av hemsidan på [tailwindcss.com](http://ta
 
 ## Hur du klarar uppgiften
 
-#### Skapa ett nytt projekt med vite
-
-```
-npm create vite@latest tailwindpage
-```
-
-Välj sedan Vanilla och sen Javascript.
-
-1. Byt mapp till nya projektet
-2. Installera beroenden från package.json
-3. Kör projektet
-
-```
-cd tailwindpage
-npm install
-npm run dev
-```
 
 #### Installera tailwind
 
-1. Installera beroenden som behövs för tailwind
-2. Skapa tailwinds config fil
+Följ instruktionerna på tailwinds hemsida: [https://tailwindcss.com/docs/installation](https://tailwindcss.com/docs/installation)
 
-```
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-```
 
-Uppdatera config-filen: tailwind.config.js
-
-```
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-
-Länka till style.css i index.html
-
-```
-<link rel="stylesheet" href="style.css" />
-```
-
-Lägg till tailwind directives i style.css
-
-```
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-### Börja skriva tailwind klasser
-
-Kör igång dev servern
-
-```
-npm run dev
-```
-
-I index.html
-
-```
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
-```
 
 ## Sätt upp ett repo med Github
 
